@@ -2,25 +2,25 @@
 
 @font-face {
     font-family: 'raleway';
-    src: url('.fonts/raleway-black.eot');
-    src: url('.fonts/raleway-black.eot?#iefix') format('embedded-opentype'),
-         url('.fonts/raleway-black.woff2') format('woff2'),
-         url('.fonts/raleway-black.woff') format('woff'),
-         url('.fonts/raleway-black.ttf') format('truetype'),
-         url('.fonts/raleway-black.svg#ralewayblack') format('svg');
-    font-weight: bold;
-    font-style: bold;
+    src: url('../fonts/raleway-black.eot');
+    src: url('../fonts/raleway-black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-black.woff2') format('woff2'),
+         url('../fonts/raleway-black.woff') format('woff'),
+         url('../fonts/raleway-black.ttf') format('truetype'),
+         url('../fonts/raleway-black.svg#ralewayblack') format('svg');
+    font-weight: 700;
+    font-style: normal;
 
 }
 
 @font-face {
     font-family: 'raleway';
-    src: url('.fonts/raleway-regular.eot');
-    src: url('.fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
-         url('.fonts/raleway-regular.woff2') format('woff2'),
-         url('.fonts/raleway-regular.woff') format('woff'),
-         url('.fonts/raleway-regular.ttf') format('truetype'),
-         url('.fonts/raleway-regular.svg#ralewayregular') format('svg');
+    src: url('../fonts/raleway-regular.eot');
+    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular.woff2') format('woff2'),
+         url('../fonts/raleway-regular.woff') format('woff'),
+         url('../fonts/raleway-regular.ttf') format('truetype'),
+         url('../fonts/raleway-regular.svg#ralewayregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -75,6 +75,7 @@ body {
   letter-spacing: 1px;
   word-spacing: 2px;
   margin-top: 14px;
+  margin-right: 20px;
   text-align: right;
 }
 .header__up__nav ul li {
@@ -173,7 +174,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   width: 80px;
   height: 400px;
   display: inline-block;
-  border: 1px solid red;
   vertical-align: middle;
   font-size: 90px;
   color: rgba(68, 173, 159, 1);
@@ -184,21 +184,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 /*MAIN1*/
 .main1 {
   width: 100%;
-  height: 300px;
+  height: 320px;
   background-color: white;
   vertical-align: middle;
 }
 .main1__container {
   width: 1000px;
   height: 300px;
-  border: 1px solid red;
   margin: 0 auto;
   padding-top: 10px;
 }
+
 div[class^="main1__container__"] {
-  margin: 10px;
   vertical-align: top;
-  border: 1px solid red;
   display: inline-block;
 }
 .main1__container__left {
@@ -207,6 +205,8 @@ div[class^="main1__container__"] {
   background-image: url("../imagesOk/box1_img.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 
 }
 .main1__container__center {
@@ -215,23 +215,164 @@ div[class^="main1__container__"] {
   background-image: url("../imagesOk/box2_img.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .main1__container__right{
   width: 300px;
   height: 250px;
+  margin: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
-
+.main1__container__panel {
+  width: 300px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0;
+  margin-top: 130px;
+  color: black;
+  padding: 10px;
+}
+.main1__container__panel p{
+  font-family: "raleway", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.main1__container__right>.main1__container__panel {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  height: 50px;
+}
+.main1_hr {
+  width: 150px;
+  height: 8px;
+  background-color: rgba(68, 173, 159, 1);
+  margin: 0;
+}
+.main1__container__right__content {
+  width: 260px;
+  height: 200px;
+  margin: 0;
+  color: grey;
+  font-family: "raleway", Arial, sans-serif;
+  font-size: 12px;
+  padding: 0px 10px 10px 10px;
+  vertical-align: middle;
+  line-height: 20px;
+}
 /*MAIN2*/
 .main2 {
   width: 100%;
   height: 700px;
-  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 .main2__container {
   width: 1000px;
   height: 700px;
   border: 1px solid red;
   margin: 0 auto;
+}
+.main2__container__up {
+  width: 1000px;
+  height: 50px;
+  border: 1px solid red;
+  margin: 0 auto;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 40px;
+}
+.main2_hr {
+  width: 300px;
+  height: 8px;
+  background-color: rgba(68, 173, 159, 1);
+  margin: 0;
+}
+section[class^="main2__block__"] {
+  width: 300px;
+  height: 450px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 0px;
+  margin-top: 50px;
+  vertical-align: middle;
+}
+.main2__block__left {
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
+.main2__block__center {
+
+}
+.main2__block__right{
+
+}
+  .main2__circle {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    width:50px;
+    height:50px;
+    position: relative;
+    top: -35px;
+    background-color: white
+  }
+    .main2__circle--inner {
+      border: 2px solid rgba(0, 0, 0, 0.05);
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      margin: 0;
+      padding-top:-15px;
+      height:20px;
+      width:20px;
+      position: absolute;
+      left: 13px;
+      top: 13px;
+    }
+  .main2__name {
+    width: 250px;
+    height: 50px;
+    margin: -40px 0 0 25px;
+    padding-top: 10px;
+    vertical-align: middle;
+    font-size: 22px;
+  }
+    .main2__name p {
+      text-align: center;
+    }
+  .main2__price {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    margin-left:auto;
+    margin-right:auto;
+    width: 120px;
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: white;
+  }
+div[class^="main2__offer__"] {
+    width: 298px;
+    border: 1px solid red;
+
+  }
+  /*div[class^="main2__offer__"] th {
+    text-align: center;
+    font-size: 22px;
+    line-height: 40px;
+    margin: 0;
+    width: auto;
+  }*/
+.main2__offer__left {
+  color: grey;
+}
+.main2__offer__middle {
+  color: black;
+}
+.main2__offer__right {
+  color: grey;
 }
 /*MAIN3*/
 .main3 {
